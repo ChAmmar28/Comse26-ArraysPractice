@@ -36,6 +36,7 @@ public class Task5 {
             }
         }
 
+        
         double average = (double) sum / scores.length;
 
         System.out.print("Scores: ");
