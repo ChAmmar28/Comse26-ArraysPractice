@@ -1,9 +1,8 @@
 public class Task2 {
     public static void main(String[] args) {
-        // Create an integer array containing 8 numbers
+       
         int[] numbers = { 12, 5, 28, 3, 19, 7, 15, 9 };
 
-        // Do not use built-in functions for max, min, sorting
         int largest = numbers[0];
         int largestIndex = 0;
         int smallest = numbers[0];
@@ -20,14 +19,12 @@ public class Task2 {
             }
         }
 
-        // Print the array
         System.out.print("Array: ");
         for (int i = 0; i < numbers.length; i++) {
             System.out.print(numbers[i] + " ");
         }
         System.out.println();
 
-        // Print values and their indices
         System.out.println("Largest: " + largest + " at index " + largestIndex);
         System.out.println("Smallest: " + smallest + " at index " + smallestIndex);
     }
