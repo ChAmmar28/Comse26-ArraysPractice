@@ -5,7 +5,6 @@ public class Task5 {
         Scanner scanner = new Scanner(System.in);
         int[] scores = new int[5];
 
-        // Ask the user to enter 5 scores, each from 0 to 100. Reject invalid scores and ask again.
         for (int i = 0; i < scores.length; i++) {
             while (true) {
                 System.out.print("Enter score " + (i + 1) + " (0-100): ");
@@ -23,8 +22,7 @@ public class Task5 {
                 }
             }
         }
-
-        // Count passed (>= 60) and failed (< 60) scores, calculate sum
+        
         int passed = 0;
         int failed = 0;
         int sum = 0;
@@ -40,7 +38,6 @@ public class Task5 {
 
         double average = (double) sum / scores.length;
 
-        // Print all scores and results
         System.out.print("Scores: ");
         for (int i = 0; i < scores.length; i++) {
             System.out.print(scores[i] + " ");
@@ -51,6 +48,6 @@ public class Task5 {
         System.out.println("Failed: " + failed);
         System.out.println("Average: " + average);
 
-        scanner.close();
+ 
     }
 }
